@@ -50,15 +50,12 @@ header .header__logo {
   font-size: 2rem;
   color: #7c6a0a;
 }
-header .links__container {
-  width: auto;
-}
-header .links__container .button__link {
+header .button__link {
   background: none;
   border: none;
-  padding-top: 4px;
+  padding-top: 3.5px;
 }
-header .links__container .button__link svg {
+header .button__link svg {
   width: 30px;
   height: 30px;
   stroke: #7c6a0a;
@@ -83,6 +80,9 @@ footer {
 @media (min-width: 500px) {
   header {
     padding: 0 40px;
+  }
+  header .header__logo {
+    font-size: 2.4rem;
   }
   header .links__container--mobile {
     display: none;

@@ -49,13 +49,18 @@ $primary-text-color: #7c6a0a;
 $secondary-text-color: #fff;
 $third-text-color: #e86424;
 $font-stack: "IBM Plex Sans", sans-serif;
+$font-size-xl: 3rem;
+$font-size-l: 2.4rem;
+$font-size-m: 2rem;
+$font-size-s: 1.6rem;
+$font-size-ss: 1.2rem;
 
 * {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 body {
   background-color: $primary-color;
@@ -71,30 +76,26 @@ header {
   align-items: center;
   padding: 0 20px;
 
-    .header__logo {
-      font-size: 2rem;
-      color: $primary-text-color;
-    }
+  .header__logo {
+    font-size: $font-size-m;
+    color: $primary-text-color;
+  }
 
-    .links__container {
-      width: auto;
+  .button__link {
+    background: none;
+    border: none;
+    padding-top: 3.5px;
 
-      .button__link {
-        background: none;
-        border: none;
-        padding-top: 4px;
-        
-        svg {
-          width: 30px;
-          height: 30px;
-          stroke: $primary-text-color;
-        }
-      }
+    svg {
+      width: 30px;
+      height: 30px;
+      stroke: $primary-text-color;
     }
+  }
 
-    .links__container--desktop {
-      display: none;
-    }
+  .links__container--desktop {
+    display: none;
+  }
 }
 
 main {
@@ -114,6 +115,10 @@ footer {
   header {
     padding: 0 40px;
 
+    .header__logo {
+      font-size: $font-size-l;
+    }
+
     .links__container--mobile {
       display: none;
     }
@@ -122,6 +127,10 @@ footer {
       display: flex;
       justify-content: space-between;
       gap: 32px;
+
+      .button__link:hover {
+        
+      }
     }
   }
 }
