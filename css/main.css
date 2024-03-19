@@ -122,7 +122,60 @@ main .main__header-info .main__header-info--img img {
   aspect-ratio: 275/343;
 }
 main .main__products {
-  display: none;
+  width: 90%;
+  margin-inline: auto;
+  padding-top: 52px;
+}
+main .main__products section h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #7c6a0a;
+}
+main .main__products section .cart-container {
+  padding-top: 32px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #ffdac6 #ffefe7;
+}
+main .main__products section .cart-container article {
+  position: relative;
+  scroll-snap-align: center;
+  min-width: 200px;
+  min-height: 344px;
+  padding: 42px 24px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffdac6;
+  border-radius: 8px;
+}
+main .main__products section .cart-container article svg {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+main .main__products section .cart-container article img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .main__products section .cart-container article h3 {
+  font-size: 1.6rem;
+  color: #7c6a0a;
+}
+main .main__products section .cart-container article p {
+  font-size: 1.2rem;
+  color: #7c6a0a;
+  text-wrap: pretty;
 }
 main .main__more-info {
   display: none;
@@ -182,7 +235,11 @@ footer {
 }
 @media (min-width: 768px) {
   .header__section {
-    padding: 0 86px;
+    padding: 0 70px;
+  }
+  .header__section .links__container svg {
+    width: 34px;
+    height: 34px;
   }
   main .main__header-info {
     display: flex;
@@ -201,6 +258,24 @@ footer {
   main .main__header-info .main__header-info--img {
     width: 360px;
   }
+  main .main__products section h2 {
+    font-size: 3rem;
+  }
+  main .main__products section .cart-container article {
+    min-width: 300px;
+    min-height: 400px;
+    padding: 48px 24px 34px;
+  }
+  main .main__products section .cart-container article svg {
+    width: 34px;
+    height: 34px;
+  }
+  main .main__products section .cart-container article h3 {
+    font-size: 2rem;
+  }
+  main .main__products section .cart-container article p {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 1274px) {
   main .main__header-info .main__header-info--text h1 {
@@ -211,5 +286,23 @@ footer {
   }
   main .main__header-info .main__header-info--img {
     width: 360px;
+  }
+  main .main__products section h2 {
+    font-size: 3rem;
+  }
+  main .main__products section .cart-container {
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+  }
+  main .main__products section article {
+    max-width: 300px;
+    min-height: 400px;
+    padding: 48px 24px 34px;
+  }
+  main .main__products section article svg {
+    width: 34px;
+    height: 34px;
   }
 }/*# sourceMappingURL=main.css.map */
