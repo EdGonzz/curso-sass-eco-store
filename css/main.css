@@ -291,6 +291,7 @@ footer {
     font-size: 3rem;
   }
   main .main__products section .cart-container {
+    padding-bottom: 32px;
     overflow: hidden;
     flex-wrap: wrap;
     justify-content: space-between;
