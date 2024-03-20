@@ -179,10 +179,11 @@ main {
       }
 
       .cart-container {
-        padding-top: 32px;
-        padding-bottom: 10px;
         display: flex;
         justify-content: space-between;
+        // padding-top: 32px;
+        // padding-bottom: 10px;
+        padding: 32px 10px 10px 10px;
         gap: 28px;
         overflow-x: scroll;
         overscroll-behavior-x: contain;
@@ -192,7 +193,6 @@ main {
 
         article {
           position: relative;
-          scroll-snap-align: center;
           min-width: 200px;
           min-height: 344px;
           padding: 42px 24px 34px;
@@ -201,6 +201,8 @@ main {
           gap: 12px;
           background-color: $secondary-color;
           border-radius: 8px;
+          scroll-snap-align: center;
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
           svg {
             height: 30px;
@@ -387,11 +389,12 @@ footer {
           font-size: $font-size-30;
         }
         .cart-container {
-          padding-bottom: 32px;
           overflow: hidden;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          gap: 55px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: center;
+          gap: 60px 0;
+          padding: 50px 0;
         }
 
         article {

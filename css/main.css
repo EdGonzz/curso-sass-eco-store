@@ -132,10 +132,9 @@ main .main__products section h2 {
   color: #7c6a0a;
 }
 main .main__products section .cart-container {
-  padding-top: 32px;
-  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  padding: 32px 10px 10px 10px;
   gap: 28px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -145,7 +144,6 @@ main .main__products section .cart-container {
 }
 main .main__products section .cart-container article {
   position: relative;
-  scroll-snap-align: center;
   min-width: 200px;
   min-height: 344px;
   padding: 42px 24px 34px;
@@ -154,6 +152,8 @@ main .main__products section .cart-container article {
   gap: 12px;
   background-color: #ffdac6;
   border-radius: 8px;
+  scroll-snap-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 main .main__products section .cart-container article svg {
   height: 30px;
@@ -291,11 +291,12 @@ footer {
     font-size: 3rem;
   }
   main .main__products section .cart-container {
-    padding-bottom: 32px;
     overflow: hidden;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 60px 0;
+    padding: 50px 0;
   }
   main .main__products section article {
     max-width: 300px;
