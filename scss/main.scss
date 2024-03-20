@@ -171,7 +171,7 @@ main {
     margin-inline: auto;
     padding-top: 52px;
 
-    section {
+    .health-care {
       h2 {
         font-size: $font-size-24;
         font-weight: 300;
@@ -179,11 +179,10 @@ main {
       }
 
       .cart-container {
+        margin:  22px 0;
         display: flex;
         justify-content: space-between;
-        // padding-top: 32px;
-        // padding-bottom: 10px;
-        padding: 32px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
         gap: 28px;
         overflow-x: scroll;
         overscroll-behavior-x: contain;
@@ -210,6 +209,7 @@ main {
             position: absolute;
             top: 6px;
             right: 6px;
+            stroke: $primary-text-color;
           }
 
           img {
@@ -227,6 +227,28 @@ main {
             font-size: $font-size-12;
             color: $primary-text-color;
             text-wrap: pretty;
+          }
+        }
+      }
+    }
+
+    .furniture {
+      @extend .health-care;
+
+      .cart-container {
+        article {
+          background-color: $third-color;
+
+          svg {
+            stroke: $secondary-text-color;
+          }
+  
+          h3 {
+            color: $secondary-text-color;
+          }
+  
+          p {
+            color: $secondary-text-color;
           }
         }
       }
@@ -337,7 +359,7 @@ footer {
     }
 
     .main__products {
-      section {
+      .health-care {
         h2 {
           font-size: $font-size-30;
         }
@@ -384,7 +406,7 @@ footer {
     }
 
     .main__products {
-      section {
+      .health-care {
         h2 {
           font-size: $font-size-30;
         }

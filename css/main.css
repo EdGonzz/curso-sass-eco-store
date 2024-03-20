@@ -126,15 +126,16 @@ main .main__products {
   margin-inline: auto;
   padding-top: 52px;
 }
-main .main__products section h2 {
+main .main__products .health-care h2, main .main__products .furniture h2 {
   font-size: 2.4rem;
   font-weight: 300;
   color: #7c6a0a;
 }
-main .main__products section .cart-container {
+main .main__products .health-care .cart-container, main .main__products .furniture .cart-container {
+  margin: 22px 0;
   display: flex;
   justify-content: space-between;
-  padding: 32px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   gap: 28px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -142,7 +143,7 @@ main .main__products section .cart-container {
   scrollbar-width: thin;
   scrollbar-color: #ffdac6 #ffefe7;
 }
-main .main__products section .cart-container article {
+main .main__products .health-care .cart-container article, main .main__products .furniture .cart-container article {
   position: relative;
   min-width: 200px;
   min-height: 344px;
@@ -155,27 +156,40 @@ main .main__products section .cart-container article {
   scroll-snap-align: center;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-main .main__products section .cart-container article svg {
+main .main__products .health-care .cart-container article svg, main .main__products .furniture .cart-container article svg {
   height: 30px;
   width: 30px;
   position: absolute;
   top: 6px;
   right: 6px;
+  stroke: #7c6a0a;
 }
-main .main__products section .cart-container article img {
+main .main__products .health-care .cart-container article img, main .main__products .furniture .cart-container article img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main__products section .cart-container article h3 {
+main .main__products .health-care .cart-container article h3, main .main__products .furniture .cart-container article h3 {
   font-size: 1.6rem;
   color: #7c6a0a;
 }
-main .main__products section .cart-container article p {
+main .main__products .health-care .cart-container article p, main .main__products .furniture .cart-container article p {
   font-size: 1.2rem;
   color: #7c6a0a;
   text-wrap: pretty;
+}
+main .main__products .furniture .cart-container article {
+  background-color: #babd8d;
+}
+main .main__products .furniture .cart-container article svg {
+  stroke: #fff;
+}
+main .main__products .furniture .cart-container article h3 {
+  color: #fff;
+}
+main .main__products .furniture .cart-container article p {
+  color: #fff;
 }
 main .main__more-info {
   display: none;
@@ -258,22 +272,22 @@ footer {
   main .main__header-info .main__header-info--img {
     width: 360px;
   }
-  main .main__products section h2 {
+  main .main__products .health-care h2, main .main__products .furniture h2 {
     font-size: 3rem;
   }
-  main .main__products section .cart-container article {
+  main .main__products .health-care .cart-container article, main .main__products .furniture .cart-container article {
     min-width: 300px;
     min-height: 400px;
     padding: 48px 24px 34px;
   }
-  main .main__products section .cart-container article svg {
+  main .main__products .health-care .cart-container article svg, main .main__products .furniture .cart-container article svg {
     width: 34px;
     height: 34px;
   }
-  main .main__products section .cart-container article h3 {
+  main .main__products .health-care .cart-container article h3, main .main__products .furniture .cart-container article h3 {
     font-size: 2rem;
   }
-  main .main__products section .cart-container article p {
+  main .main__products .health-care .cart-container article p, main .main__products .furniture .cart-container article p {
     font-size: 1.8rem;
   }
 }
@@ -287,10 +301,10 @@ footer {
   main .main__header-info .main__header-info--img {
     width: 360px;
   }
-  main .main__products section h2 {
+  main .main__products .health-care h2, main .main__products .furniture h2 {
     font-size: 3rem;
   }
-  main .main__products section .cart-container {
+  main .main__products .health-care .cart-container, main .main__products .furniture .cart-container {
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -298,12 +312,12 @@ footer {
     gap: 60px 0;
     padding: 50px 0;
   }
-  main .main__products section article {
+  main .main__products .health-care article, main .main__products .furniture article {
     max-width: 300px;
     min-height: 400px;
     padding: 48px 24px 34px;
   }
-  main .main__products section article svg {
+  main .main__products .health-care article svg, main .main__products .furniture article svg {
     width: 34px;
     height: 34px;
   }
