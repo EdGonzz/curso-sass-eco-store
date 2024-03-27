@@ -181,7 +181,7 @@ main {
       }
 
       .cart-container {
-        margin:  22px 0;
+        margin: 22px 0;
         display: flex;
         justify-content: space-between;
         padding: 10px 10px 10px 10px;
@@ -245,11 +245,11 @@ main {
           svg {
             stroke: $secondary-text-color;
           }
-  
+
           h3 {
             color: $secondary-text-color;
           }
-  
+
           p {
             color: $secondary-text-color;
           }
@@ -259,7 +259,48 @@ main {
   }
 
   .main__more-info {
-    display: none;
+    margin-inline: auto;
+    width: 90%;
+    header {
+      h2 {
+        font-size: $font-size-24;
+        font-weight: 400;
+        color: $primary-text-color;
+      }
+    }
+
+    .about-us__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      padding-top: 58px;
+      padding-bottom: 58px;
+
+      .about-us__earth {
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 82px;
+          height: 82px;
+        }
+
+        p {
+          padding-top: 18px;
+          font-size: $font-size-16;
+          font-weight: 400;
+          color: $third-text-color;
+          text-align: center;
+        }
+      }
+
+      .about-us__lightbulb {
+        @extend .about-us__earth;
+      }
+    }
   }
 }
 
@@ -395,6 +436,35 @@ footer {
         }
       }
     }
+
+    .main__more-info {
+      header {
+        h2 {
+          font-size: $font-size-30;
+        }
+      }
+
+      .about-us__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .about-us__earth {
+          display: flex;
+          flex-direction: row;
+
+          img {
+            width: 140px;
+            height: 140px;
+          }
+
+          p {
+            padding-top: 0;
+            font-size: $font-size-20;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -436,6 +506,19 @@ footer {
           svg {
             width: 34px;
             height: 34px;
+          }
+        }
+      }
+    }
+
+    .main__more-info {
+      .about-us__container {
+
+        .about-us__earth {
+          width: 50%;
+          p {
+            padding-top: 0;
+            font-size: $font-size-26;
           }
         }
       }
